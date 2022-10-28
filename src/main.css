@@ -1,0 +1,24 @@
+@import url(https://lsong.org/stylesheets/theme/default.css);
+@import url(https://lsong.org/stylesheets/theme/dark.css);
+
+.container-full {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar,
+.app-content {
+  height: 100vh;
+}
+
+.app-content {
+  width: 100%;
+  overflow: hidden;
+}

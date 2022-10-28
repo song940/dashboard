@@ -1,0 +1,258 @@
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/main.css ***!
+  \*********************************************************************************************************************************************************************************/
+@import url(https://lsong.org/stylesheets/theme/default.css);
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/main.css (1) ***!
+  \*************************************************************************************************************************************************************************************/
+@import url(https://lsong.org/stylesheets/theme/dark.css);
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/components/Sidebar/index.css ***!
+  \*****************************************************************************************************************************************************************************************************/
+.sidebar {
+  width: 350px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border-color);
+  background-color: var(--sidebar-bg-color);
+}
+
+.sidebar-narrow {
+  width: 80px;
+  min-width: 80px;
+}
+
+.sidebar-narrow .user {
+  background: none;
+}
+
+.sidebar-narrow .user-content {
+  display: none;
+}
+
+.channels {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar {
+  min-width: 32px;
+  min-height: 32px;
+  background-color: #666;
+  border-radius: 5px;
+}
+
+.user-content {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.user-name {
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+.user-status {
+  color: #666;
+}
+
+.menu-item {
+  margin: 10px;
+  padding: 10px;
+  opacity: .5;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.menu-item:hover {
+  opacity: .9;
+}
+
+.menu-item-active {
+  opacity: 1;
+  background-color: var(--menu-item-active-color, #ddd);
+}
+
+.menu-item a {
+  text-decoration: none;
+}
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/main.css (2) ***!
+  \*************************************************************************************************************************************************************************************/
+.container-full {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: var(--background-color);
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar,
+.app-content {
+  height: 100vh;
+}
+
+.app-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/components/Header/index.css ***!
+  \****************************************************************************************************************************************************************************************************/
+.header {
+  -webkit-app-region: drag;
+  box-shadow: 0 3px 1px var(--sidebar-bg-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+  margin: 0;
+  padding: 12px;
+  font-size: 18px;
+  font-family: monospace;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--text-color);
+}
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/pages/chat/index.css ***!
+  \*********************************************************************************************************************************************************************************************/
+.chat-app {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+.chat-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.chat-editor textarea {
+  border: none;
+  padding: 10px;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  outline: none;
+  resize: vertical;
+  min-height: 50px;
+  max-height: 500px;
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+.chat-message {
+  margin: 20px;
+}
+
+.chat-message-name {
+  margin: 10px 0;
+}
+
+.chat-message-content {
+  padding: 20px;
+  border-radius: 10px;
+}
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/pages/aria2/index.css ***!
+  \**********************************************************************************************************************************************************************************************/
+
+
+.task {
+    color: #fff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #666;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+.task-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.task-progress {
+    width: 100%;
+    height: 5px;
+    margin: 10px 0;
+    position: relative;
+    background-color: #363a3e;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.task-progress-value {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #aaa;
+}
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/pages/clash/index.css ***!
+  \**********************************************************************************************************************************************************************************************/
+.chat-app {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.chat-channels ul {
+  background-color: #dddddd12;
+}
+
+.chat-message textarea {
+  border: none;
+  resize: vertical;
+  min-height: 50px;
+  max-height: 500px;
+}
+
+/*!*************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/pages/miniflux/index.css ***!
+  \*************************************************************************************************************************************************************************************************/
+
+article {
+  margin: 50px 10px;
+}

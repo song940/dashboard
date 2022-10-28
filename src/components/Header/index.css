@@ -1,0 +1,15 @@
+.header {
+  -webkit-app-region: drag;
+  box-shadow: 0 3px 1px var(--sidebar-bg-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header h1 {
+  margin: 0;
+  padding: 12px;
+  font-size: 18px;
+  font-family: monospace;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--text-color);
+}

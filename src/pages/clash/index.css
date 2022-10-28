@@ -1,0 +1,27 @@
+.chat-app {
+  display: flex;
+  flex-direction: row;
+}
+
+.chat-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.chat-channels ul {
+  background-color: #dddddd12;
+}
+
+.chat-message textarea {
+  border: none;
+  resize: vertical;
+  min-height: 50px;
+  max-height: 500px;
+}

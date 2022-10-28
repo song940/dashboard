@@ -1,0 +1,76 @@
+.sidebar {
+  width: 350px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border-color);
+  background-color: var(--sidebar-bg-color);
+}
+
+.sidebar-narrow {
+  width: 80px;
+  min-width: 80px;
+}
+
+.sidebar-narrow .user {
+  background: none;
+}
+
+.sidebar-narrow .user-content {
+  display: none;
+}
+
+.channels {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar {
+  min-width: 32px;
+  min-height: 32px;
+  background-color: #666;
+  border-radius: 5px;
+}
+
+.user-content {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.user-name {
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+.user-status {
+  color: #666;
+}
+
+.menu-item {
+  margin: 10px;
+  padding: 10px;
+  opacity: .5;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.menu-item:hover {
+  opacity: .9;
+}
+
+.menu-item-active {
+  opacity: 1;
+  background-color: var(--menu-item-active-color, #ddd);
+}
+
+.menu-item a {
+  text-decoration: none;
+}
