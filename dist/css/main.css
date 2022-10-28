@@ -2,10 +2,6 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/main.css ***!
   \*********************************************************************************************************************************************************************************/
 @import url(https://lsong.org/stylesheets/theme/default.css);
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/main.css (1) ***!
-  \*************************************************************************************************************************************************************************************/
-@import url(https://lsong.org/stylesheets/theme/dark.css);
 /*!*****************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/components/Sidebar/index.css ***!
   \*****************************************************************************************************************************************************************************************************/
@@ -86,8 +82,10 @@
   text-decoration: none;
 }
 /*!*************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/main.css (2) ***!
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[3]!./src/main.css (1) ***!
   \*************************************************************************************************************************************************************************************/
+/* @import url(https://lsong.org/stylesheets/theme/dark.css); */
+
 .container-full {
   margin: 0;
   padding: 0;
