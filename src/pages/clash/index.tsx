@@ -26,16 +26,36 @@ const list = [
   }
 ];
 
+const ProxyGroup: React.FC = ({ data }) => {
+  return (
+    <div className="proxy-group">
+      <h4>{data.name}</h4>
+      <ul>
+        {
+          data?.all?.map((name, i) => <li key={i}>{name}</li>)
+        }
+      </ul>
+    </div>
+  );
+};
+
+const Rule = ({ rule }) => {
+  return (
+    <div>{rule.type} {rule.payload} -&gt; {rule.proxy}</div>
+  );
+};
+
 const ClashApp = () => {
   const [tab, setTab] = useState(list[0]);
-  const [ proxies, setProxies ] = useState([]);
+  const [rules, setRules] = useState([]);
+  const [proxies, setProxies] = useState({});
   useEffect(() => {
-    switch(tab.name) {
-      case 'Proxies':
-        clash.proxies().then(console.log);
-        break;
+    switch (tab.name) {
       case 'Rules':
-        clash.rules().then(console.log);
+        clash.rules().then(setRules);
+        break;
+      case 'Proxies':
+        clash.proxies().then(setProxies);
         break;
     }
   }, [tab]);
@@ -45,7 +65,10 @@ const ClashApp = () => {
       <div className="chat-main" >
         <Header title={tab.name} />
         <div className="chat-content">
-          { proxies.map(proxy => <Proxy />) }
+          <ul>
+            {tab.name === 'Rules' && rules.map((rule, i) => <li key={i}><Rule rule={rule} /></li>)}
+          </ul>
+          {tab.name === 'Proxies' && Object.values(proxies).map((x, i) => <ProxyGroup key={i} data={x} />)}
         </div>
       </div>
     </div>

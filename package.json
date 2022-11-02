@@ -40,6 +40,7 @@
     "@song940/miniflux": "^0.0.3",
     "aria2c": "^0.0.6",
     "cls-str": "^0.0.4",
-    "precompiled-mqtt": "^4.3.14-beta"
+    "precompiled-mqtt": "^4.3.14-beta",
+    "react-icons": "^4.6.0"
   }
 }

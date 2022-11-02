@@ -9,16 +9,14 @@
 }
 
 #app {
+  height: 100vh;
   display: flex;
   flex-direction: row;
-}
-
-.sidebar,
-.app-content {
-  height: 100vh;
+  box-sizing: border-box;
+  /* border: 50px solid #333; */
 }
 
 .app-content {
   width: 100%;
-  overflow: hidden;
+  display: flex;
 }

@@ -4,6 +4,7 @@ import {
   useRoutes,
   HashRouter as Router,
 } from "react-router-dom";
+
 import { Sidebar } from './components/Sidebar';
 
 import './main.css';
@@ -28,14 +29,6 @@ const routes = [
       loader: () => import('./pages/index')
     })
   },
-  // {
-  //   name: "Home",
-  //   path: "/home",
-  //   element: loadable({
-  //     loading,
-  //     loader: () => import('./pages/home')
-  //   })
-  // },
   {
     name: "Chat",
     path: "/chat",

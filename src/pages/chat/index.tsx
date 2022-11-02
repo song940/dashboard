@@ -42,7 +42,7 @@ const reducer = (state, action) => {
       state.currentChannel.messages.push(action.payload);
       break;
   }
-  return { ...state};
+  return { ...state };
 };
 
 
@@ -83,10 +83,15 @@ const ChatApp = () => {
     const options: mqtt.IClientPublishOptions = { qos: 0, retain: false };
     client.publish(topic, message, options, () => e.target.value = '');
   });
+  const addChannel = () => {
+    console.log('add');
+  };
   console.log('state.currentChannel?.messages', state.currentChannel?.messages);
   return (
     <div className="chat-app" >
-      <Sidebar title='Chat' className="chat-channels" links={state.channels} active={state.currentChannel} onClick={channel => dispatch({ type: 'SET_CURRENT_CHANNEL', channel })} />
+      <Sidebar title='Chat' className="chat-channels" links={state.channels} active={state.currentChannel} onClick={channel => dispatch({ type: 'SET_CURRENT_CHANNEL', channel })} >
+        <span className="chat-add" onClick={addChannel}>+</span>
+      </Sidebar>
       <div className="chat-main" >
         <Header title={`Message - ${state.currentChannel?.name}`} />
         <div className="chat-content">
