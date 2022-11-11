@@ -60,15 +60,14 @@ const getTitle = (task): string => {
 
 const TaskCard: React.FC = ({ task }) => {
   const { completedLength, totalLength } = task;
-  // const progress = (completedLength / totalLength) * 100;
-  const progress = Math.random() * 100
+  const progress = (completedLength / totalLength) * 100;
   console.log(task);
   return (
     <div className="task" >
       <h3 className="task-name" >{getTitle(task)}</h3>
       <TaskProgress value={progress} />
       <div className="task-info" >
-        <span>1.0G/2.6G</span>
+        <span>{completedLength}/{totalLength}</span>
         <div>
           <span>upload: 0KB/s</span>
           <span>download: 10MB/s</span>

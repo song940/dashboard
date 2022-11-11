@@ -42,11 +42,11 @@
 
 .chat-message-content {
   padding: 20px;
+  overflow: hidden;
   border-radius: 10px;
   word-break: break-all;
   white-space: break-spaces;
-  border: 2px solid red;
-  overflow: hidden;
+  background-color: var(--menu-item-active-color, #ddd);
 }
 
 .chat-add {

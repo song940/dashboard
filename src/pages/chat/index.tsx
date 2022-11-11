@@ -45,7 +45,6 @@ const reducer = (state, action) => {
   return { ...state };
 };
 
-
 const initialChannels = [
   {
     name: 'Test Channel',
@@ -64,7 +63,6 @@ const initialState = {
   currentChannel: initialChannels[0]
 };
 
-
 const ChatApp = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   useEffect(() => {
@@ -73,7 +71,6 @@ const ChatApp = () => {
       dispatch({ type: 'MESSAGE', payload: { topic, message, packet } });
     };
     client.on('message', onMessage);
-    // return () => client.off('message', onMessage);
   }, []);
   const handleSubmit = useCallback((e) => {
     if (e.keyCode !== 13) return;
